@@ -1,5 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #464647;
+}
+
+.App {
+	padding: 2%;
+	text-align: center;
+}
+
+.App h1 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.App .buttons {
+	width: 20%;
+	float: left;
+	padding: 2%;
+
+}
+
+.App .buttons button {
+	display: block;
+	margin: 15% 0;
+	width: 80%;
+	padding: 8% 0;
+	font-size: 16px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	box-shadow: 0px 0px 10px #fff;
+	cursor: pointer;
+}
+
+.App .buttons button:hover {
+	background: #8f8f91;
+	color: #fff;
+}
+
+.board {
+	width: 80%;
+	float: right;
+	padding: 2% 24% 4% 4%;
+}
+
+.tile {
+	width: 11.11%;
+	display: inline-block;
+
+}
+
+.tile input {
+	width: 100%;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	cursor: pointer;
+	height: 10vh;
+	background: #464647;
+}
+
+.tile .modify {
+	background: #5f5f60;
+}
+
+.tile .modify:focus {
+	box-shadow: 0px 0px 10px #fff;
 }
